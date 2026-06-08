@@ -88,6 +88,7 @@ Backend| Python / PHP
 Database| MySQL
 IDE| VS Code
 Browser| Google Chrome
+
 🔗 CRUD APIs
 
 Employee APIs
