@@ -157,7 +157,8 @@ Relationships
 - One Payroll Record generates one Payslip.
 - Admin manages Employees, Attendance, Payroll, and Payslips.
 
-  📌 DATABASE SCHEMA CREATION :
+📌 DATABASE SCHEMA CREATION :
+
 SQL Schema – Employee Payroll Management System
 SQL
 CREATE TABLE Department (
