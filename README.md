@@ -88,6 +88,42 @@ Backend| Python / PHP
 Database| MySQL
 IDE| VS Code
 Browser| Google Chrome
+🔗 CRUD APIs
+
+Employee APIs
+
+- Create Employee
+- Get Employee Details
+- Update Employee Details
+- Delete Employee
+
+Attendance APIs
+
+- Create Attendance
+- Get Attendance Details
+- Update Attendance
+- Delete Attendance
+
+Payroll APIs
+
+- Create Payroll
+- Get Payroll Details
+- Update Payroll
+- Delete Payroll
+
+Payslip APIs
+
+- Create Payslip
+- Get Payslip Details
+- Update Payslip
+- Delete Payslip
+
+Admin APIs
+
+- Create Admin
+- Get Admin Details
+- Update Admin Details
+- Delete Admin
 
 🗂️ Table List
 
@@ -98,3 +134,24 @@ Browser| Google Chrome
 5. Payslip Table
 6. Department Table
 7. Admin Table
+
+📊 ER Diagram
+
+Entities
+
+1. Employee
+2. Attendance
+3. Payroll
+4. Leave
+5. Payslip
+6. Department
+7. Admin
+
+Relationships
+
+- One Department has many Employees.
+- One Employee has many Attendance Records.
+- One Employee has many Leave Records.
+- One Employee has one Payroll Record.
+- One Payroll Record generates one Payslip.
+- Admin manages Employees, Attendance, Payroll, and Payslips.
