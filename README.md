@@ -157,3 +157,61 @@ Relationships
 - One Payroll Record generates one Payslip.
 - Admin manages Employees, Attendance, Payroll, and Payslips.
 
+  📌 DATABASE SCHEMA CREATION :
+SQL Schema – Employee Payroll Management System
+SQL
+CREATE TABLE Department (
+    dept_id INT PRIMARY KEY AUTO_INCREMENT,
+    dept_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Employee (
+    emp_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
+);
+
+CREATE TABLE Attendance (
+    attendance_id INT PRIMARY KEY AUTO_INCREMENT,
+    emp_id INT NOT NULL,
+    attendance_date DATE NOT NULL,
+    status VARCHAR(20),
+    in_time TIME,
+    out_time TIME,
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE LeaveRequest (
+    leave_id INT PRIMARY KEY AUTO_INCREMENT,
+    emp_id INT NOT NULL,
+    from_date DATE,
+    to_date DATE,
+    reason VARCHAR(255),
+    status VARCHAR(20),
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE Salary (
+    salary_id INT PRIMARY KEY AUTO_INCREMENT,
+    emp_id INT NOT NULL,
+    basic_salary DECIMAL(10,2),
+    allowance DECIMAL(10,2),
+    deduction DECIMAL(10,2),
+    net_salary DECIMAL(10,2),
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE Payslip (
+    payslip_id INT PRIMARY KEY AUTO_INCREMENT,
+    emp_id INT NOT NULL,
+    month VARCHAR(20),
+    generated_date DATE,
+    net_salary DECIMAL(10,2),
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+📌 OUTCOME :
+Database schema designed with 6 entities, multiple primary keys, and proper foreign key relationships for the Employee Payroll Management System, ensuring efficient payroll automation and data management.
+
