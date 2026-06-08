@@ -156,3 +156,4 @@ Relationships
 - One Employee has one Payroll Record.
 - One Payroll Record generates one Payslip.
 - Admin manages Employees, Attendance, Payroll, and Payslips.
+
