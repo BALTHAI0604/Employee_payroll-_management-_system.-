@@ -88,3 +88,13 @@ Backend| Python / PHP
 Database| MySQL
 IDE| VS Code
 Browser| Google Chrome
+
+🗂️ Table List
+
+1. Employee Table
+2. Attendance Table
+3. Payroll Table
+4. Leave Table
+5. Payslip Table
+6. Department Table
+7. Admin Table
