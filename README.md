@@ -218,3 +218,4 @@ CREATE TABLE Payslip (
 📌 OUTCOME :
 Database schema designed with 6 entities, multiple primary keys, and proper foreign key relationships for the Employee Payroll Management System, ensuring efficient payroll automation and data management.
 
+
